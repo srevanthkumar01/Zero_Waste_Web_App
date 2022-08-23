@@ -1,0 +1,47 @@
+<?php
+$a=$_POST["name"]
+$b=$_POST["email"]
+$c=$_POST["age"]
+$d=$_POST["gender"]
+$e=$_POST["literary_genres"]
+$f=$_POST["cardnumber"]
+
+$mysql=mysqli_connect("localhost","root")
+or die("can't connect");
+mysqli_select_db($mysql,"rev")
+or die("can't select");
+mysqli_query($mysql,"insert into donation values('$a','$b','$c','$d','$e','$f')")
+or die("query failed to insert");
+$result=mysqli_query($mysql,"select * from donation");
+?>
+
+<html>  
+<head><title>PHP and MYSQL</title></head>
+  <body bgcolor="aabbcc">
+     <h3>Page to display the Stored data</h3>
+        <table border="1">
+             <tr>
+                <th>NAME</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Details</th>
+                <th>Card</th></tr>
+           <?php while($array=mysqli_fetch_row($result)):
+              echo
+               "<tr>
+                  <td>$array[0]</td>
+    			      <td>$array[1]</td>
+    			      <td>$array[2]</td>
+    			      <td>$array[3]</td>
+    			      <td>$array[4]</td>
+    			      <td>$array[5]</td>
+    			      <td>$array[6]</td>
+
+ 		         </tr>";
+           endwhile; ?>
+           <?mysqli_free_result($result);?>
+           <?mysqli_close($mysql);?>
+        </table>
+     </body>
+</html>

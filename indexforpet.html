@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;500;700&display=swap" rel="stylesheet">
+  <title>Petiton Form</title>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="title">PETITION</h1>
+    <p id="description">Form to gather information about your petition</p>
+  </header>
+
+  <main id="container">
+    <form id="petition-form" action="petition.php" method="post">
+
+      <label for="name" id="name-label">Name: </label><br>
+      <input type="text" required id="name" name="name" placeholder="Enter your name here..."><br>
+
+      <label for="email" id="email-label">Email: </label><br>
+      <input type="email" required id="email" name="email" placeholder="Enter your email here..."><br>
+
+      <label for="age" id="number-label">Age: </label><br>
+      <input type="number" required min="1" max="99" id="number" name="age" placeholder="Enter your age here..."><br>
+
+      <label for="gender">Enter your gender:</label><br>
+      <input type="text" required id="gender" name="gender" placeholder="Enter your gender here..."><br>
+
+      <label for="topic">State your topic:</label><br>
+      <input type="text" required id="topic" name="topic" placeholder="Enter your topic here..."><br>
+
+      <label for="brief">Explain your petiton briefly:</label><br>
+      <input type="text" required id="brief" name="brief" placeholder="Tell us about your petiton..."><br>
+
+<br><br>
+<br>
+      <button type="submit" form="petition-form" id="submit" name="button">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>

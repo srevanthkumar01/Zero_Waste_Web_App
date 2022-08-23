@@ -1,0 +1,150 @@
+
+.clr {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+
+h2 {
+    margin: 8px 0;
+    padding: 8px 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #353c3e;
+}
+
+p {
+    margin: 8px 0;
+    padding: 0 0 8px 0;
+}
+
+a {
+    color: #0087c7;
+    text-decoration: underline;
+}
+
+.fbg {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #929292;
+    font: normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+    background: #1c1c1c;
+}
+
+.fbg_resize {
+    margin: 0 auto;
+    width: 68%;
+    padding: 16px 20px;
+}
+
+.fbg h2 {
+    color: #fff;
+    padding-bottom: 24px;
+}
+
+.fbg .col {
+    margin: 0;
+    float: left;
+}
+
+.fbg .c1 {
+    padding: 0 16px 0 0;
+    width: 22%;
+}
+
+.fbg .c2 {
+    padding: 0 36px 0 16px;
+    width: 22%;
+}
+
+.fbg .fbg_ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fbg .fbg_ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fbg .fbg_ul li a {
+    display: block;
+    margin: 0;
+    padding: 2px 0 2px 12px;
+    color: #aeaeae;
+    text-decoration: none;
+}
+
+.fbg .fbg_ul li a:hover {
+    color: #0087c7;
+    text-decoration: underline;
+}
+
+.fbg p.contact_info {
+    line-height: 1.8em;
+}
+
+.fbg p.contact_info a {
+    text-decoration: underline;
+}
+
+.fbg p.contact_info span {
+    display: block;
+    float: left;
+    width: 74px;
+    font-weight: bold;
+    color: #dbdbdb;
+}
+
+
+.footer {
+    background: #1c1c1c;
+}
+
+.footer_resize {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 68%;
+    line-height: 1.5em;
+    color: #6b6b6b;
+    border-top: 1px solid #434444;
+}
+
+.footer_resize p {
+    margin: 24px 0;
+    padding: 0;
+    line-height: normal;
+    white-space: nowrap;
+    text-indent: inherit;
+}
+
+.footer_resize a {
+    color: #dbdbdb;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.footer_resize a:hover {
+    color: #dbdbdb;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.footer_resize .lf {
+    float: left;
+}
+
+.footer_resize .rf {
+    float: right;
+}
+
